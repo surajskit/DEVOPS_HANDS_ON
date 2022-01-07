@@ -1,0 +1,1601 @@
+suraj_ust@SURAJ-LAPPY:~$ ls
+ 2                 a            com.txt       file2.txt       home             mix.txt             mytem        role                    suraj_playbook   users,
+ Abclmpex          abcd.txt     copynew.txt   first.yml       id,              mycmds.sh           name         sample                  temp            'vardemo.sh '
+ Change            abcimpex     create        fun.sh          ifelse.sh        mycommands.sh       name,        sample.txt              tempy            with
+ Create            aby.txt      directory     gg.txt          information     'mycommands.sh '     nano.save    save                    tempysuraj       your
+ Hashinfor.txt     adfg.txt     directory.    have            input.sh         myfile              old.txt      selfile.sh              the
+ Hashmum           and          etc,.         hello.txt       install-tomcat   myfile.sh           own          singh                   their
+ InitialGalaxy     args.sh      fibonacci     hellofile.txt   like             myfilewithvars.sh   parent       start-tomcat            to
+ InitialHashmum.   assignment   file          hellosript.sh   location,        myinfo.txt          personal     suraj                   today.txt
+ Zing              called       file1         hi2.txt         main.yml         myingo.txt          respective   suraj_orchestrate.yml   users
+suraj_ust@SURAJ-LAPPY:~$ rm /path/to/dir/*
+rm: cannot remove '/path/to/dir/*': No such file or directory
+suraj_ust@SURAJ-LAPPY:~$ rm -r /path/to/dir/*
+rm: cannot remove '/path/to/dir/*': No such file or directory
+suraj_ust@SURAJ-LAPPY:~$ rm *
+rm: cannot remove '2': Is a directory
+rm: cannot remove 'Abclmpex': Is a directory
+rm: cannot remove 'Change': Is a directory
+rm: cannot remove 'Create': Is a directory
+rm: cannot remove 'Hashinfor.txt': Is a directory
+rm: cannot remove 'Hashmum': Is a directory
+rm: cannot remove 'InitialGalaxy': Is a directory
+rm: cannot remove 'InitialHashmum.': Is a directory
+rm: cannot remove 'Zing': Is a directory
+rm: cannot remove 'a': Is a directory
+rm: remove write-protected regular file 'abcd.txt'?
+rm: cannot remove 'abcimpex': Is a directory
+rm: cannot remove 'and': Is a directory
+rm: cannot remove 'assignment': Is a directory
+rm: cannot remove 'called': Is a directory
+rm: cannot remove 'create': Is a directory
+rm: cannot remove 'directory': Is a directory
+rm: cannot remove 'directory.': Is a directory
+rm: cannot remove 'etc,.': Is a directory
+rm: cannot remove 'file': Is a directory
+rm: cannot remove 'file1': Is a directory
+rm: cannot remove 'have': Is a directory
+rm: cannot remove 'home': Is a directory
+rm: cannot remove 'id,': Is a directory
+rm: cannot remove 'information': Is a directory
+rm: cannot remove 'install-tomcat': Is a directory
+rm: cannot remove 'like': Is a directory
+rm: cannot remove 'location,': Is a directory
+rm: cannot remove 'mytem': Is a directory
+rm: cannot remove 'name': Is a directory
+rm: cannot remove 'name,': Is a directory
+rm: cannot remove 'own': Is a directory
+rm: cannot remove 'parent': Is a directory
+rm: cannot remove 'personal': Is a directory
+rm: cannot remove 'respective': Is a directory
+rm: cannot remove 'role': Is a directory
+rm: cannot remove 'sample': Is a directory
+rm: cannot remove 'save': Is a directory
+rm: cannot remove 'singh': Is a directory
+rm: cannot remove 'start-tomcat': Is a directory
+rm: cannot remove 'suraj': Is a directory
+rm: cannot remove 'suraj_playbook': Is a directory
+rm: cannot remove 'temp': Is a directory
+rm: cannot remove 'tempy': Is a directory
+rm: cannot remove 'tempysuraj': Is a directory
+rm: cannot remove 'the': Is a directory
+rm: cannot remove 'their': Is a directory
+rm: cannot remove 'to': Is a directory
+rm: cannot remove 'users': Is a directory
+rm: cannot remove 'users,': Is a directory
+rm: cannot remove 'with': Is a directory
+rm: cannot remove 'your': Is a directory
+suraj_ust@SURAJ-LAPPY:~$ rmdir *
+rmdir: failed to remove 'Hashmum': Directory not empty
+rmdir: failed to remove 'InitialGalaxy': Directory not empty
+rmdir: failed to remove 'Zing': Directory not empty
+rmdir: failed to remove 'abcd.txt': Not a directory
+rmdir: failed to remove 'assignment': Directory not empty
+rmdir: failed to remove 'install-tomcat': Directory not empty
+rmdir: failed to remove 'mytem': Directory not empty
+rmdir: failed to remove 'parent': Directory not empty
+rmdir: failed to remove 'singh': Directory not empty
+rmdir: failed to remove 'start-tomcat': Directory not empty
+rmdir: failed to remove 'suraj': Directory not empty
+rmdir: failed to remove 'suraj_playbook': Directory not empty
+suraj_ust@SURAJ-LAPPY:~$ pwd
+/home/suraj_ust
+suraj_ust@SURAJ-LAPPY:~$ cd
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum  InitialGalaxy  Zing  abcd.txt  assignment  install-tomcat  mytem  parent  singh  start-tomcat  suraj  suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ cd Hashmum
+suraj_ust@SURAJ-LAPPY:~/Hashmum$ ls
+Hashinfor  InitialHashmum
+suraj_ust@SURAJ-LAPPY:~/Hashmum$ cd InitialHashmum
+suraj_ust@SURAJ-LAPPY:~/Hashmum/InitialHashmum$ ls
+Hashmum
+suraj_ust@SURAJ-LAPPY:~/Hashmum/InitialHashmum$ cd ..
+suraj_ust@SURAJ-LAPPY:~/Hashmum$ cd ..
+suraj_ust@SURAJ-LAPPY:~$ cd /
+suraj_ust@SURAJ-LAPPY:/$ pwd
+/
+suraj_ust@SURAJ-LAPPY:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+suraj_ust@SURAJ-LAPPY:/$ cd user
+-bash: cd: user: No such file or directory
+suraj_ust@SURAJ-LAPPY:/$ cd usr
+suraj_ust@SURAJ-LAPPY:/usr$ ls
+bin  config  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+suraj_ust@SURAJ-LAPPY:/usr$ ls
+bin  config  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+suraj_ust@SURAJ-LAPPY:/usr$ cd src
+suraj_ust@SURAJ-LAPPY:/usr/src$ ls
+suraj_ust@SURAJ-LAPPY:/usr/src$ cd ../..
+suraj_ust@SURAJ-LAPPY:/$
+suraj_ust@SURAJ-LAPPY:/$ mkdir -p pfolder/cfolder
+mkdir: cannot create directory ‘pfolder’: Permission denied
+suraj_ust@SURAJ-LAPPY:/$ mkdir -p parentfolder/childfolder
+mkdir: cannot create directory ‘parentfolder’: Permission denied
+suraj_ust@SURAJ-LAPPY:/$ mkdir -p folder/childfolder
+mkdir: cannot create directory ‘folder’: Permission denied
+suraj_ust@SURAJ-LAPPY:/$ mkdir -p myfold/childfold
+mkdir: cannot create directory ‘myfold’: Permission denied
+suraj_ust@SURAJ-LAPPY:/$ cd
+suraj_ust@SURAJ-LAPPY:~$ mkdir -p parentfolder/childfolder
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum  InitialGalaxy  Zing  abcd.txt  assignment  install-tomcat  mytem  parent  parentfolder  singh  start-tomcat  suraj  suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ cd parentfolder
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ ls
+childfolder
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ cd childfolder
+suraj_ust@SURAJ-LAPPY:~/parentfolder/childfolder$ #capturing output in a file
+suraj_ust@SURAJ-LAPPY:~/parentfolder/childfolder$ cd
+suraj_ust@SURAJ-LAPPY:~$ ls > outputfile.txt
+suraj_ust@SURAJ-LAPPY:~$ cat outputfile.txt
+Hashmum
+InitialGalaxy
+Zing
+abcd.txt
+assignment
+install-tomcat
+mytem
+outputfile.txt
+parent
+parentfolder
+singh
+start-tomcat
+suraj
+suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ #echo and cat command
+suraj_ust@SURAJ-LAPPY:~$ echo "Hello welcome to the linux session !" > mytext.txt
+suraj_ust@SURAJ-LAPPY:~$ cat mytext.txt
+Hello welcome to the linux session !
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ cat "today date is 07-jan-2022" > mytext1.txt
+cat: 'today date is 07-jan-2022': No such file or directory
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #using cat to view the content of multiple file
+suraj_ust@SURAJ-LAPPY:~$ cat my*
+cat: mytem: Is a directory
+Hello welcome to the linux session !
+suraj_ust@SURAJ-LAPPY:~$ cat mytext1.txt mytext.txt
+Hello welcome to the linux session !
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #making file again
+suraj_ust@SURAJ-LAPPY:~$ echo "today is 07-jan-2022" > mytext1.txt
+suraj_ust@SURAJ-LAPPY:~$ cat mytext1.txt
+today is 07-jan-2022
+suraj_ust@SURAJ-LAPPY:~$ #combining all files
+suraj_ust@SURAJ-LAPPY:~$ cat my* > mix.txt
+cat: mytem: Is a directory
+suraj_ust@SURAJ-LAPPY:~$ cat mytext* > mix.txt
+suraj_ust@SURAJ-LAPPY:~$ cat mix.txt
+Hello welcome to the linux session !
+today is 07-jan-2022
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #appending a file with more text
+suraj_ust@SURAJ-LAPPY:~$ cat mix.txt
+Hello welcome to the linux session !
+today is 07-jan-2022
+suraj_ust@SURAJ-LAPPY:~$ echo "we are adding more text using double greater than symbol " >> mix.txt
+suraj_ust@SURAJ-LAPPY:~$ cat mix.txt
+Hello welcome to the linux session !
+today is 07-jan-2022
+we are adding more text using double greater than symbol
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #moving file and directory
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment      mix.txt  mytext.txt   outputfile.txt  parentfolder  start-tomcat  suraj_playbook
+InitialGalaxy  abcd.txt  install-tomcat  mytem    mytext1.txt  parent          singh         suraj
+suraj_ust@SURAJ-LAPPY:~$ mv mix.txt parentfolder
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment      mytem       mytext1.txt     parent        singh         suraj
+InitialGalaxy  abcd.txt  install-tomcat  mytext.txt  outputfile.txt  parentfolder  start-tomcat  suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ cd parentfolder
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ ls
+childfolder  mix.txt
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ cat mix.txt
+Hello welcome to the linux session !
+today is 07-jan-2022
+we are adding more text using double greater than symbol
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ mv mix.txt /home
+mv: cannot move 'mix.txt' to '/home/mix.txt': Permission denied
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ mv mix.txt suraj_ust
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ ls
+childfolder  suraj_ust
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ cd suraj_ust
+-bash: cd: suraj_ust: Not a directory
+suraj_ust@SURAJ-LAPPY:~/parentfolder$ cd
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment      mytem       mytext1.txt     parent        singh         suraj
+InitialGalaxy  abcd.txt  install-tomcat  mytext.txt  outputfile.txt  parentfolder  start-tomcat  suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ #i am confuse in above mv command
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #copying a file
+suraj_ust@SURAJ-LAPPY:~$ cp mytext.txt backupmytext.txt
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment        install-tomcat  mytext.txt   outputfile.txt  parentfolder  start-tomcat  suraj_playbook
+InitialGalaxy  abcd.txt  backupmytext.txt  mytem           mytext1.txt  parent          singh         suraj
+suraj_ust@SURAJ-LAPPY:~$ cat backupmytext.txt
+Hello welcome to the linux session !
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #renaming a file
+suraj_ust@SURAJ-LAPPY:~$ mv mytext1.txt mytext2.txt
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment        install-tomcat  mytext.txt   outputfile.txt  parentfolder  start-tomcat  suraj_playbook
+InitialGalaxy  abcd.txt  backupmytext.txt  mytem           mytext2.txt  parent          singh         suraj
+suraj_ust@SURAJ-LAPPY:~$ cat mytext2.txt
+today is 07-jan-2022
+suraj_ust@SURAJ-LAPPY:~$ #user information
+suraj_ust@SURAJ-LAPPY:~$ whoami
+suraj_ust
+suraj_ust@SURAJ-LAPPY:~$ who
+suraj_ust@SURAJ-LAPPY:~$ w
+ 15:21:15 up 40 min,  0 users,  load average: 0.52, 0.58, 0.59
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+suraj_ust@SURAJ-LAPPY:~$ id
+uid=1000(suraj_ust) gid=1000(suraj_ust) groups=1000(suraj_ust),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev)
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #for changing password we use passwd
+suraj_ust@SURAJ-LAPPY:~$ passwd
+Changing password for suraj_ust.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+suraj_ust@SURAJ-LAPPY:~$ passwd
+Changing password for suraj_ust.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #man command
+suraj_ust@SURAJ-LAPPY:~$ man man
+
+
+suraj_ust@SURAJ-LAPPY:~$ man cd
+No manual entry for cd
+suraj_ust@SURAJ-LAPPY:~$ man ls
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #managing group users
+suraj_ust@SURAJ-LAPPY:~$ #to view user information first change to the root directory
+suraj_ust@SURAJ-LAPPY:~$ cd/
+-bash: cd/: No such file or directory
+suraj_ust@SURAJ-LAPPY:~$ cd /
+suraj_ust@SURAJ-LAPPY:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+suraj_ust@SURAJ-LAPPY:/$ #to view all user infor on the sys
+suraj_ust@SURAJ-LAPPY:/$ /etc/passwd
+-bash: /etc/passwd: Permission denied
+suraj_ust@SURAJ-LAPPY:/$ /etc/passwd:
+-bash: /etc/passwd:: No such file or directory
+suraj_ust@SURAJ-LAPPY:/$ cat /etc/passwd:
+cat: '/etc/passwd:': No such file or directory
+suraj_ust@SURAJ-LAPPY:/$ cat/etc/passwd:
+-bash: cat/etc/passwd:: No such file or directory
+suraj_ust@SURAJ-LAPPY:/$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+suraj_ust:x:1000:1000:,,,:/home/suraj_ust:/bin/bash
+suraj:x:1001:1001::/home/suraj:/bin/sh
+singh:x:1002:1002::/home/singh:/bin/sh
+dfj:x:1003:1005::/home/dfj:/bin/sh
+user1:x:1004:1006::/home/user1:/bin/sh
+user2:x:1005:1007::/home/user2:/bin/sh
+user3:x:1006:1008::/home/user3:/bin/sh
+user4:x:1007:1009::/home/user4:/bin/sh
+ram:x:1008:1010:,,,:/home/ram:/bin/bash
+ram2:x:1009:1011:,,,:/home/ram2:/bin/bash
+ram3:x:1010:1012:,,,:/home/ram3:/bin/bash
+ram4:x:1011:1013:,,,:/home/ram4:/bin/bash
+timjag:x:1012:1014:,,,:/home/timjag:/bin/bash
+newuser:x:1013:1015::/home/newuser:/bin/sh
+newuser1:x:1014:1016::/home/newuser1:/bin/sh
+bang:x:1015:1017::/home/bang:/bin/sh
+hari1:x:1016:1018:,,,:/home/hari1:/bin/bash
+member1:x:1017:1020:,,,:/home/member1:/bin/bash
+member2:x:1018:1021:,,,:/home/member2:/bin/bash
+a1:x:1019:1022:,,,:/home/a1:/bin/bash
+red1:x:1020:1023:,,,:/home/red1:/bin/bash
+red2:x:1021:1024:,,,:/home/red2:/bin/bash
+first:x:1022:1025:,,,:/home/first:/bin/bash
+second:x:1023:1026:,,,:/home/second:/bin/bash
+Hashmum_user1:x:1024:1027::/home/Hashmum_user1:/bin/sh
+Hashmum_user2:x:1025:1028::/home/Hashmum_user2:/bin/sh
+january:x:1026:1029:,,,:/home/january:/bin/bash
+january1:x:1027:1030:,,,:/home/january1:/bin/bash
+suraj_ust@SURAJ-LAPPY:/$
+suraj_ust@SURAJ-LAPPY:/$ #adding a user
+suraj_ust@SURAJ-LAPPY:/$ cd
+suraj_ust@SURAJ-LAPPY:~$ sudo useradd dk
+[sudo] password for suraj_ust:
+suraj_ust@SURAJ-LAPPY:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+suraj_ust:x:1000:1000:,,,:/home/suraj_ust:/bin/bash
+suraj:x:1001:1001::/home/suraj:/bin/sh
+singh:x:1002:1002::/home/singh:/bin/sh
+dfj:x:1003:1005::/home/dfj:/bin/sh
+user1:x:1004:1006::/home/user1:/bin/sh
+user2:x:1005:1007::/home/user2:/bin/sh
+user3:x:1006:1008::/home/user3:/bin/sh
+user4:x:1007:1009::/home/user4:/bin/sh
+ram:x:1008:1010:,,,:/home/ram:/bin/bash
+ram2:x:1009:1011:,,,:/home/ram2:/bin/bash
+ram3:x:1010:1012:,,,:/home/ram3:/bin/bash
+ram4:x:1011:1013:,,,:/home/ram4:/bin/bash
+timjag:x:1012:1014:,,,:/home/timjag:/bin/bash
+newuser:x:1013:1015::/home/newuser:/bin/sh
+newuser1:x:1014:1016::/home/newuser1:/bin/sh
+bang:x:1015:1017::/home/bang:/bin/sh
+hari1:x:1016:1018:,,,:/home/hari1:/bin/bash
+member1:x:1017:1020:,,,:/home/member1:/bin/bash
+member2:x:1018:1021:,,,:/home/member2:/bin/bash
+a1:x:1019:1022:,,,:/home/a1:/bin/bash
+red1:x:1020:1023:,,,:/home/red1:/bin/bash
+red2:x:1021:1024:,,,:/home/red2:/bin/bash
+first:x:1022:1025:,,,:/home/first:/bin/bash
+second:x:1023:1026:,,,:/home/second:/bin/bash
+Hashmum_user1:x:1024:1027::/home/Hashmum_user1:/bin/sh
+Hashmum_user2:x:1025:1028::/home/Hashmum_user2:/bin/sh
+january:x:1026:1029:,,,:/home/january:/bin/bash
+january1:x:1027:1030:,,,:/home/january1:/bin/bash
+dk:x:1028:1031::/home/dk:/bin/sh
+suraj_ust@SURAJ-LAPPY:~$ sudo adduser dk
+adduser: The user `dk' already exists.
+suraj_ust@SURAJ-LAPPY:~$ sudo adduser ck
+Adding user `ck' ...
+Adding new group `ck' (1032) ...
+Adding new user `ck' (1029) with group `ck' ...
+Creating home directory `/home/ck' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for ck
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n]
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+suraj_ust:x:1000:1000:,,,:/home/suraj_ust:/bin/bash
+suraj:x:1001:1001::/home/suraj:/bin/sh
+singh:x:1002:1002::/home/singh:/bin/sh
+dfj:x:1003:1005::/home/dfj:/bin/sh
+user1:x:1004:1006::/home/user1:/bin/sh
+user2:x:1005:1007::/home/user2:/bin/sh
+user3:x:1006:1008::/home/user3:/bin/sh
+user4:x:1007:1009::/home/user4:/bin/sh
+ram:x:1008:1010:,,,:/home/ram:/bin/bash
+ram2:x:1009:1011:,,,:/home/ram2:/bin/bash
+ram3:x:1010:1012:,,,:/home/ram3:/bin/bash
+ram4:x:1011:1013:,,,:/home/ram4:/bin/bash
+timjag:x:1012:1014:,,,:/home/timjag:/bin/bash
+newuser:x:1013:1015::/home/newuser:/bin/sh
+newuser1:x:1014:1016::/home/newuser1:/bin/sh
+bang:x:1015:1017::/home/bang:/bin/sh
+hari1:x:1016:1018:,,,:/home/hari1:/bin/bash
+member1:x:1017:1020:,,,:/home/member1:/bin/bash
+member2:x:1018:1021:,,,:/home/member2:/bin/bash
+a1:x:1019:1022:,,,:/home/a1:/bin/bash
+red1:x:1020:1023:,,,:/home/red1:/bin/bash
+red2:x:1021:1024:,,,:/home/red2:/bin/bash
+first:x:1022:1025:,,,:/home/first:/bin/bash
+second:x:1023:1026:,,,:/home/second:/bin/bash
+Hashmum_user1:x:1024:1027::/home/Hashmum_user1:/bin/sh
+Hashmum_user2:x:1025:1028::/home/Hashmum_user2:/bin/sh
+january:x:1026:1029:,,,:/home/january:/bin/bash
+january1:x:1027:1030:,,,:/home/january1:/bin/bash
+dk:x:1028:1031::/home/dk:/bin/sh
+ck:x:1029:1032:,,,:/home/ck:/bin/bash
+suraj_ust@SURAJ-LAPPY:~$ #doubt in above useradd and adduser command
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #group information
+suraj_ust@SURAJ-LAPPY:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,suraj_ust
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:suraj_ust
+fax:x:21:
+voice:x:22:
+cdrom:x:24:suraj_ust
+floppy:x:25:suraj_ust
+tape:x:26:
+sudo:x:27:suraj_ust,hari1
+audio:x:29:suraj_ust
+dip:x:30:suraj_ust
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:suraj_ust
+sasl:x:45:
+plugdev:x:46:suraj_ust
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:suraj_ust
+lxd:x:118:
+suraj_ust:x:1000:
+suraj:x:1001:
+singh:x:1002:
+sks:x:1003:
+Blore:x:1004:
+dfj:x:1005:
+user1:x:1006:
+user2:x:1007:
+user3:x:1008:
+user4:x:1009:
+ram:x:1010:
+ram2:x:1011:
+ram3:x:1012:
+ram4:x:1013:
+timjag:x:1014:
+newuser:x:1015:
+newuser1:x:1016:
+bang:x:1017:
+hari1:x:1018:
+devops:x:1019:
+member1:x:1020:
+member2:x:1021:
+a1:x:1022:
+red1:x:1023:
+red2:x:1024:
+first:x:1025:
+second:x:1026:
+Hashmum_user1:x:1027:
+Hashmum_user2:x:1028:
+january:x:1029:
+january1:x:1030:
+dk:x:1031:
+ck:x:1032:
+suraj_ust@SURAJ-LAPPY:~$ #group add
+suraj_ust@SURAJ-LAPPY:~$ groupadd
+Usage: groupadd [options] GROUP
+
+Options:
+  -f, --force                   exit successfully if the group already exists,
+                                and cancel -g if the GID is already used
+  -g, --gid GID                 use GID for the new group
+  -h, --help                    display this help message and exit
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -o, --non-unique              allow to create groups with duplicate
+                                (non-unique) GID
+  -p, --password PASSWORD       use this encrypted password for the new group
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       directory prefix
+      --extrausers              Use the extra users database
+
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #super user
+suraj_ust@SURAJ-LAPPY:~$ sudo groupadd training
+suraj_ust@SURAJ-LAPPY:~$ sudo addgroup training
+addgroup: The group `training' already exists.
+suraj_ust@SURAJ-LAPPY:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,suraj_ust
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:suraj_ust
+fax:x:21:
+voice:x:22:
+cdrom:x:24:suraj_ust
+floppy:x:25:suraj_ust
+tape:x:26:
+sudo:x:27:suraj_ust,hari1
+audio:x:29:suraj_ust
+dip:x:30:suraj_ust
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:suraj_ust
+sasl:x:45:
+plugdev:x:46:suraj_ust
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:suraj_ust
+lxd:x:118:
+suraj_ust:x:1000:
+suraj:x:1001:
+singh:x:1002:
+sks:x:1003:
+Blore:x:1004:
+dfj:x:1005:
+user1:x:1006:
+user2:x:1007:
+user3:x:1008:
+user4:x:1009:
+ram:x:1010:
+ram2:x:1011:
+ram3:x:1012:
+ram4:x:1013:
+timjag:x:1014:
+newuser:x:1015:
+newuser1:x:1016:
+bang:x:1017:
+hari1:x:1018:
+devops:x:1019:
+member1:x:1020:
+member2:x:1021:
+a1:x:1022:
+red1:x:1023:
+red2:x:1024:
+first:x:1025:
+second:x:1026:
+Hashmum_user1:x:1027:
+Hashmum_user2:x:1028:
+january:x:1029:
+january1:x:1030:
+dk:x:1031:
+ck:x:1032:
+training:x:1033:
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #listing index and long format
+suraj_ust@SURAJ-LAPPY:~$ ls - il
+ls: cannot access '-': No such file or directory
+ls: cannot access 'il': No such file or directory
+suraj_ust@SURAJ-LAPPY:~$ ls -il
+total 0
+ 2814749767709879 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Jan  5 17:08 Hashmum
+  844424931228683 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 17 13:00 InitialGalaxy
+16044073672578234 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 28 18:09 Zing
+ 3659174697361867 ----rwxr-x 1 suraj_ust suraj_ust   56 Dec 10 10:32 abcd.txt
+ 7318349394541996 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec  7 15:40 assignment
+38843546786102682 -rw-r--r-- 1 suraj_ust suraj_ust   37 Jan  7 15:18 backupmytext.txt
+12947848928787304 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 16 11:33 install-tomcat
+ 4785074604249607 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec  7 20:37 mytem
+ 8444249301364058 -rw-r--r-- 1 suraj_ust suraj_ust   37 Jan  7 15:03 mytext.txt
+11821949021892070 -rw-r--r-- 1 suraj_ust suraj_ust   21 Jan  7 15:08 mytext2.txt
+23925373020444314 -rw-r--r-- 1 suraj_ust suraj_ust  143 Jan  7 15:01 outputfile.txt
+ 2814749767509491 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec  7 20:12 parent
+ 3940649674078246 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Jan  7 15:16 parentfolder
+ 1688849860626591 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 15 17:28 singh
+ 1407374883918082 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 16 11:34 start-tomcat
+ 3377699720890509 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 15 17:27 suraj
+ 3940649674312934 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 16 14:36 suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ ls -il mytext.txt
+8444249301364058 -rw-r--r-- 1 suraj_ust suraj_ust 37 Jan  7 15:03 mytext.txt
+suraj_ust@SURAJ-LAPPY:~$ ls -il my*
+ 8444249301364058 -rw-r--r-- 1 suraj_ust suraj_ust   37 Jan  7 15:03 mytext.txt
+11821949021892070 -rw-r--r-- 1 suraj_ust suraj_ust   21 Jan  7 15:08 mytext2.txt
+
+mytem:
+total 0
+19140298416351459 drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec  1 12:31 innermytem
+ 6192449487753044 -rw-r--r-- 1 suraj_ust suraj_ust    7 Dec  7 20:30 my.txt
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #file command to view metadata
+suraj_ust@SURAJ-LAPPY:~$ file mytext.txt
+mytext.txt: ASCII text
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #hidden file
+suraj_ust@SURAJ-LAPPY:~$ ls -a
+.              .bash_history  .git        .motd_shown      .sudo_as_admin_successful  Zing              install-tomcat  outputfile.txt  start-tomcat
+..             .bash_logout   .gitconfig  .profile         .viminfo                   abcd.txt          mytem           parent          suraj
+.ansible       .bashrc        .landscape  .python_history  Hashmum                    assignment        mytext.txt      parentfolder    suraj_playbook
+.bash_aliases  .config        .local      .s.txt.swp       InitialGalaxy              backupmytext.txt  mytext2.txt     singh
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #finding meta data of a file
+suraj_ust@SURAJ-LAPPY:~$ ls -l
+total 0
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Jan  5 17:08 Hashmum
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 17 13:00 InitialGalaxy
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 28 18:09 Zing
+----rwxr-x 1 suraj_ust suraj_ust   56 Dec 10 10:32 abcd.txt
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec  7 15:40 assignment
+-rw-r--r-- 1 suraj_ust suraj_ust   37 Jan  7 15:18 backupmytext.txt
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 16 11:33 install-tomcat
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec  7 20:37 mytem
+-rw-r--r-- 1 suraj_ust suraj_ust   37 Jan  7 15:03 mytext.txt
+-rw-r--r-- 1 suraj_ust suraj_ust   21 Jan  7 15:08 mytext2.txt
+-rw-r--r-- 1 suraj_ust suraj_ust  143 Jan  7 15:01 outputfile.txt
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec  7 20:12 parent
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Jan  7 15:16 parentfolder
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 15 17:28 singh
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 16 11:34 start-tomcat
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 15 17:27 suraj
+drwxr-xr-x 1 suraj_ust suraj_ust 4096 Dec 16 14:36 suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ ls -l mytext.txt
+-rw-r--r-- 1 suraj_ust suraj_ust 37 Jan  7 15:03 mytext.txt
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #chmod and octal permission
+suraj_ust@SURAJ-LAPPY:~$ ls -il mytext.txt
+8444249301364058 -rw-r--r-- 1 suraj_ust suraj_ust 37 Jan  7 15:03 mytext.txt
+suraj_ust@SURAJ-LAPPY:~$ chmod +x mytext.txt
+suraj_ust@SURAJ-LAPPY:~$ ls -l mytext.txt
+-rwxr-xr-x 1 suraj_ust suraj_ust 37 Jan  7 15:03 mytext.txt
+suraj_ust@SURAJ-LAPPY:~$ chmod 774 mytext.txt
+suraj_ust@SURAJ-LAPPY:~$ ls -l mytext.txt
+-rwxrwxr-- 1 suraj_ust suraj_ust 37 Jan  7 15:03 mytext.txt
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #creating file with touch command
+suraj_ust@SURAJ-LAPPY:~$ touch myempfile
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment        install-tomcat  mytem       mytext2.txt     parent        singh         suraj
+InitialGalaxy  abcd.txt  backupmytext.txt  myempfile       mytext.txt  outputfile.txt  parentfolder  start-tomcat  suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #use of nano editor
+suraj_ust@SURAJ-LAPPY:~$ nano myempfile
+suraj_ust@SURAJ-LAPPY:~$ cat myempfile
+echo " today is 07-jan-2022
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #removing / deleting a file
+suraj_ust@SURAJ-LAPPY:~$ rm --myempfile
+rm: unrecognized option '--myempfile'
+Try 'rm --help' for more information.
+suraj_ust@SURAJ-LAPPY:~$ rm -- myempfile
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment        install-tomcat  mytext.txt   outputfile.txt  parentfolder  start-tomcat  suraj_playbook
+InitialGalaxy  abcd.txt  backupmytext.txt  mytem           mytext2.txt  parent          singh         suraj
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #find command
+suraj_ust@SURAJ-LAPPY:~$ find . - my*
+.
+./.ansible
+./.ansible/galaxy_cache
+./.ansible/tmp
+./.bashrc
+./.bash_aliases
+./.bash_history
+./.bash_logout
+./.config
+./.config/htop
+./.config/htop/htoprc
+./.config/procps
+./.git
+./.git/branches
+./.git/config
+./.git/description
+./.git/HEAD
+./.git/hooks
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info
+./.git/info/exclude
+./.git/objects
+./.git/objects/e6
+./.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+./.git/objects/info
+./.git/objects/pack
+./.git/refs
+./.git/refs/heads
+./.git/refs/tags
+./.gitconfig
+./.landscape
+./.landscape/sysinfo.log
+./.local
+./.local/share
+./.local/share/nano
+./.motd_shown
+./.profile
+./.python_history
+./.s.txt.swp
+./.sudo_as_admin_successful
+./.viminfo
+./abcd.txt
+./assignment
+./assignment/file2.txt
+./assignment/file3.txt
+./backupmytext.txt
+./Hashmum
+./Hashmum/Hashinfor
+./Hashmum/InitialHashmum
+./Hashmum/InitialHashmum/Hashmum
+./InitialGalaxy
+./InitialGalaxy/Galaxyinfor.txt
+./install-tomcat
+./install-tomcat/.travis.yml
+./install-tomcat/defaults
+./install-tomcat/defaults/main.yml
+./install-tomcat/files
+./install-tomcat/handlers
+./install-tomcat/handlers/main.yml
+./install-tomcat/meta
+./install-tomcat/meta/main.yml
+./install-tomcat/README.md
+./install-tomcat/tasks
+./install-tomcat/tasks/main.yml
+./install-tomcat/templates
+./install-tomcat/tests
+./install-tomcat/tests/inventory
+./install-tomcat/tests/test.yml
+./install-tomcat/vars
+./install-tomcat/vars/main.yml
+./mytem
+./mytem/innermytem
+./mytem/my.txt
+./mytext.txt
+./mytext2.txt
+./outputfile.txt
+./parent
+./parent/child
+./parent/child/hi.txt
+./parentfolder
+./parentfolder/childfolder
+./parentfolder/suraj_ust
+./singh
+./singh/.travis.yml
+./singh/defaults
+./singh/defaults/main.yml
+./singh/files
+./singh/handlers
+./singh/handlers/main.yml
+./singh/meta
+./singh/meta/main.yml
+./singh/README.md
+./singh/tasks
+./singh/tasks/main.yml
+./singh/templates
+./singh/tests
+./singh/tests/inventory
+./singh/tests/test.yml
+./singh/vars
+./singh/vars/main.yml
+./start-tomcat
+./start-tomcat/.travis.yml
+./start-tomcat/defaults
+./start-tomcat/defaults/main.yml
+./start-tomcat/files
+./start-tomcat/handlers
+./start-tomcat/handlers/main.yml
+./start-tomcat/meta
+./start-tomcat/meta/main.yml
+./start-tomcat/README.md
+./start-tomcat/tasks
+./start-tomcat/tasks/main.yml
+./start-tomcat/templates
+./start-tomcat/tests
+./start-tomcat/tests/inventory
+./start-tomcat/tests/test.yml
+./start-tomcat/vars
+./start-tomcat/vars/main.yml
+./suraj
+./suraj/.travis.yml
+./suraj/defaults
+./suraj/defaults/main.yml
+./suraj/files
+./suraj/handlers
+./suraj/handlers/main.yml
+./suraj/meta
+./suraj/meta/main.yml
+./suraj/README.md
+./suraj/tasks
+./suraj/tasks/main.yml
+./suraj/templates
+./suraj/tests
+./suraj/tests/inventory
+./suraj/tests/test.yml
+./suraj/vars
+./suraj/vars/main.yml
+./suraj_playbook
+./suraj_playbook/install-tomcat
+./suraj_playbook/install-tomcat/.travis.yml
+./suraj_playbook/install-tomcat/defaults
+./suraj_playbook/install-tomcat/defaults/main.yml
+./suraj_playbook/install-tomcat/files
+./suraj_playbook/install-tomcat/handlers
+./suraj_playbook/install-tomcat/handlers/main.yml
+./suraj_playbook/install-tomcat/meta
+./suraj_playbook/install-tomcat/meta/main.yml
+./suraj_playbook/install-tomcat/README.md
+./suraj_playbook/install-tomcat/tasks
+./suraj_playbook/install-tomcat/tasks/main.yml
+./suraj_playbook/install-tomcat/templates
+./suraj_playbook/install-tomcat/tests
+./suraj_playbook/install-tomcat/tests/inventory
+./suraj_playbook/install-tomcat/tests/test.yml
+./suraj_playbook/install-tomcat/vars
+./suraj_playbook/install-tomcat/vars/main.yml
+./suraj_playbook/start-tomcat
+./suraj_playbook/start-tomcat/.travis.yml
+./suraj_playbook/start-tomcat/defaults
+./suraj_playbook/start-tomcat/defaults/main.yml
+./suraj_playbook/start-tomcat/files
+./suraj_playbook/start-tomcat/handlers
+./suraj_playbook/start-tomcat/handlers/main.yml
+./suraj_playbook/start-tomcat/meta
+./suraj_playbook/start-tomcat/meta/main.yml
+./suraj_playbook/start-tomcat/README.md
+./suraj_playbook/start-tomcat/tasks
+./suraj_playbook/start-tomcat/tasks/main.yml
+./suraj_playbook/start-tomcat/templates
+./suraj_playbook/start-tomcat/tests
+./suraj_playbook/start-tomcat/tests/inventory
+./suraj_playbook/start-tomcat/tests/test.yml
+./suraj_playbook/start-tomcat/vars
+./suraj_playbook/start-tomcat/vars/main.yml
+./suraj_playbook/suraj_orchestrate.yml
+./Zing
+./Zing/Zing
+./Zing/Zing/Zing
+find: ‘-’: No such file or directory
+mytem
+mytem/innermytem
+mytem/my.txt
+mytext.txt
+mytext2.txt
+suraj_ust@SURAJ-LAPPY:~$ find . - mytext
+.
+./.ansible
+./.ansible/galaxy_cache
+./.ansible/tmp
+./.bashrc
+./.bash_aliases
+./.bash_history
+./.bash_logout
+./.config
+./.config/htop
+./.config/htop/htoprc
+./.config/procps
+./.git
+./.git/branches
+./.git/config
+./.git/description
+./.git/HEAD
+./.git/hooks
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info
+./.git/info/exclude
+./.git/objects
+./.git/objects/e6
+./.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+./.git/objects/info
+./.git/objects/pack
+./.git/refs
+./.git/refs/heads
+./.git/refs/tags
+./.gitconfig
+./.landscape
+./.landscape/sysinfo.log
+./.local
+./.local/share
+./.local/share/nano
+./.motd_shown
+./.profile
+./.python_history
+./.s.txt.swp
+./.sudo_as_admin_successful
+./.viminfo
+./abcd.txt
+./assignment
+./assignment/file2.txt
+./assignment/file3.txt
+./backupmytext.txt
+./Hashmum
+./Hashmum/Hashinfor
+./Hashmum/InitialHashmum
+./Hashmum/InitialHashmum/Hashmum
+./InitialGalaxy
+./InitialGalaxy/Galaxyinfor.txt
+./install-tomcat
+./install-tomcat/.travis.yml
+./install-tomcat/defaults
+./install-tomcat/defaults/main.yml
+./install-tomcat/files
+./install-tomcat/handlers
+./install-tomcat/handlers/main.yml
+./install-tomcat/meta
+./install-tomcat/meta/main.yml
+./install-tomcat/README.md
+./install-tomcat/tasks
+./install-tomcat/tasks/main.yml
+./install-tomcat/templates
+./install-tomcat/tests
+./install-tomcat/tests/inventory
+./install-tomcat/tests/test.yml
+./install-tomcat/vars
+./install-tomcat/vars/main.yml
+./mytem
+./mytem/innermytem
+./mytem/my.txt
+./mytext.txt
+./mytext2.txt
+./outputfile.txt
+./parent
+./parent/child
+./parent/child/hi.txt
+./parentfolder
+./parentfolder/childfolder
+./parentfolder/suraj_ust
+./singh
+./singh/.travis.yml
+./singh/defaults
+./singh/defaults/main.yml
+./singh/files
+./singh/handlers
+./singh/handlers/main.yml
+./singh/meta
+./singh/meta/main.yml
+./singh/README.md
+./singh/tasks
+./singh/tasks/main.yml
+./singh/templates
+./singh/tests
+./singh/tests/inventory
+./singh/tests/test.yml
+./singh/vars
+./singh/vars/main.yml
+./start-tomcat
+./start-tomcat/.travis.yml
+./start-tomcat/defaults
+./start-tomcat/defaults/main.yml
+./start-tomcat/files
+./start-tomcat/handlers
+./start-tomcat/handlers/main.yml
+./start-tomcat/meta
+./start-tomcat/meta/main.yml
+./start-tomcat/README.md
+./start-tomcat/tasks
+./start-tomcat/tasks/main.yml
+./start-tomcat/templates
+./start-tomcat/tests
+./start-tomcat/tests/inventory
+./start-tomcat/tests/test.yml
+./start-tomcat/vars
+./start-tomcat/vars/main.yml
+./suraj
+./suraj/.travis.yml
+./suraj/defaults
+./suraj/defaults/main.yml
+./suraj/files
+./suraj/handlers
+./suraj/handlers/main.yml
+./suraj/meta
+./suraj/meta/main.yml
+./suraj/README.md
+./suraj/tasks
+./suraj/tasks/main.yml
+./suraj/templates
+./suraj/tests
+./suraj/tests/inventory
+./suraj/tests/test.yml
+./suraj/vars
+./suraj/vars/main.yml
+./suraj_playbook
+./suraj_playbook/install-tomcat
+./suraj_playbook/install-tomcat/.travis.yml
+./suraj_playbook/install-tomcat/defaults
+./suraj_playbook/install-tomcat/defaults/main.yml
+./suraj_playbook/install-tomcat/files
+./suraj_playbook/install-tomcat/handlers
+./suraj_playbook/install-tomcat/handlers/main.yml
+./suraj_playbook/install-tomcat/meta
+./suraj_playbook/install-tomcat/meta/main.yml
+./suraj_playbook/install-tomcat/README.md
+./suraj_playbook/install-tomcat/tasks
+./suraj_playbook/install-tomcat/tasks/main.yml
+./suraj_playbook/install-tomcat/templates
+./suraj_playbook/install-tomcat/tests
+./suraj_playbook/install-tomcat/tests/inventory
+./suraj_playbook/install-tomcat/tests/test.yml
+./suraj_playbook/install-tomcat/vars
+./suraj_playbook/install-tomcat/vars/main.yml
+./suraj_playbook/start-tomcat
+./suraj_playbook/start-tomcat/.travis.yml
+./suraj_playbook/start-tomcat/defaults
+./suraj_playbook/start-tomcat/defaults/main.yml
+./suraj_playbook/start-tomcat/files
+./suraj_playbook/start-tomcat/handlers
+./suraj_playbook/start-tomcat/handlers/main.yml
+./suraj_playbook/start-tomcat/meta
+./suraj_playbook/start-tomcat/meta/main.yml
+./suraj_playbook/start-tomcat/README.md
+./suraj_playbook/start-tomcat/tasks
+./suraj_playbook/start-tomcat/tasks/main.yml
+./suraj_playbook/start-tomcat/templates
+./suraj_playbook/start-tomcat/tests
+./suraj_playbook/start-tomcat/tests/inventory
+./suraj_playbook/start-tomcat/tests/test.yml
+./suraj_playbook/start-tomcat/vars
+./suraj_playbook/start-tomcat/vars/main.yml
+./suraj_playbook/suraj_orchestrate.yml
+./Zing
+./Zing/Zing
+./Zing/Zing/Zing
+find: ‘-’: No such file or directory
+find: ‘mytext’: No such file or directory
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #free command
+suraj_ust@SURAJ-LAPPY:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        4096184     3098984      767848       17720      229352      863468
+Swap:      12582912     1544392    11038520
+suraj_ust@SURAJ-LAPPY:~$ #uptime command
+suraj_ust@SURAJ-LAPPY:~$ uptime
+ 16:10:32 up  1:29,  0 users,  load average: 0.52, 0.58, 0.59
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ # SHELL SCRIPTING LANGUAGE
+suraj_ust@SURAJ-LAPPY:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> name = "suraj singh"
+>>> no = 2222
+>>> city = "delhi"
+>>> print("name is "+name+"and city is "+city+"number is "+str(no))
+name is suraj singhand city is delhinumber is 2222
+>>> print("name is "+name+"and no is "+str(no)+"and city is "+city)
+name is suraj singhand no is 2222and city is delhi
+>>>
+>>>
+>>> #function
+>>> def check(m,n):
+... if(m>n):
+          File "<stdin>", line 2
+    if(m>n):
+    ^
+IndentationError: expected an indented block
+>>> def check(m,n):
+...     if(m>n):
+...             print(str(m)+'is greater')
+...     else:
+...             print(str(n)+'is greater')
+...
+>>> check(5,7)
+7is greater
+>>> check(8,6)
+8is greater
+>>>
+>>> #CLASS AND OBJECT
+>>> class product:
+...     def setproduct(self,name,price,qty):
+...             self.name=name
+...             self.price=price
+...             self.qty=qty
+...     def getproduction(self):
+...             print(self.name)
+...             print(self.price)
+...             print(self.qty)
+...
+>>> prd = product()
+>>> prd.setproduct('rice',40,10)
+>>> prd.getproduct()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'product' object has no attribute 'getproduct'
+>>> prd.getproduction()
+rice
+40
+10
+>>>
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+suraj_ust@SURAJ-LAPPY:~$ #top command
+suraj_ust@SURAJ-LAPPY:~$ top
+top - 16:33:19 up  1:52,  0 users,  load average: 0.52, 0.58, 0.59
+Tasks:   4 total,   1 running,   3 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us, 17.2 sy,  0.0 ni, 77.3 id,  0.0 wa,  1.3 hi,  0.0 si,  0.0 st
+MiB Mem :   4000.2 total,    608.6 free,   3167.6 used,    224.0 buff/cache
+MiB Swap:  12288.0 total,  10721.1 free,   1566.9 used.    702.0 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0    8944    332    288 S   0.0   0.0   0:00.35 init
+    8 root      20   0    8944    132     88 S   0.0   0.0   0:00.01 init
+    9 suraj_u+  20   0   18240   3736   3632 S   0.0   0.1   0:01.61 bash
+  242 suraj_u+  20   0   18948   2172   1528 R   0.0   0.1   0:00.07 top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+suraj_ust@SURAJ-LAPPY:~$ #SHELL SCRIPTING FILE
+suraj_ust@SURAJ-LAPPY:~$ nano
+suraj_ust@SURAJ-LAPPY:~$ cat shellfile.sh
+#!/bin/bash
+echo " welcome to the shell scriptin language"
+ls
+echo "the list of directories "
+name = suraj singh
+city = Bangalore
+echo "$name $city"
+suraj_ust@SURAJ-LAPPY:~$ chmod +x shellfile.sh
+suraj_ust@SURAJ-LAPPY:~$ ./shellfile.sh
+ welcome to the shell scriptin language
+Hashmum        Zing      assignment        install-tomcat  mytext.txt   outputfile.txt  parentfolder  singh         suraj
+InitialGalaxy  abcd.txt  backupmytext.txt  mytem           mytext2.txt  parent          shellfile.sh  start-tomcat  suraj_playbook
+the list of directories
+./shellfile.sh: line 5: name: command not found
+./shellfile.sh: line 6: city: command not found
+
+suraj_ust@SURAJ-LAPPY:~$ #READING VARIABLE VALUES
+suraj_ust@SURAJ-LAPPY:~$ nano var.sh
+suraj_ust@SURAJ-LAPPY:~$ chmod +x var.sh
+suraj_ust@SURAJ-LAPPY:~$ ./var.sh
+./var.sh: line 1: name: command not found
+./var.sh: line 2: city: command not found
+
+suraj_ust@SURAJ-LAPPY:~$ nano var.sh
+suraj_ust@SURAJ-LAPPY:~$ ./var.sh
+what is ur name
+suraj singh
+city name
+delhi
+name is suraj singh and city is delhi
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #SHELL SCRIPT PARAMETERS
+suraj_ust@SURAJ-LAPPY:~$ nano helloscrit.sh
+suraj_ust@SURAJ-LAPPY:~$ chmod +x helloscript.sh
+chmod: cannot access 'helloscript.sh': No such file or directory
+suraj_ust@SURAJ-LAPPY:~$ chmod +x helloscrit.sh
+suraj_ust@SURAJ-LAPPY:~$ ./helloscrit.sh
+./helloscrit.sh: line 1: The: command not found
+./helloscrit.sh: line 2: 2nd: command not found
+./helloscrit.sh: line 3: 3rd: command not found
+./helloscrit.sh: line 4: 4th: command not found
+./helloscrit.sh: line 5: 5th: command not found
+./helloscrit.sh: line 6: 6th: command not found
+suraj_ust@SURAJ-LAPPY:~$ ./helloscrit.sh jan feb march april may june
+./helloscrit.sh: line 1: The: command not found
+./helloscrit.sh: line 2: 2nd: command not found
+./helloscrit.sh: line 3: 3rd: command not found
+./helloscrit.sh: line 4: 4th: command not found
+./helloscrit.sh: line 5: 5th: command not found
+./helloscrit.sh: line 6: 6th: command not found
+suraj_ust@SURAJ-LAPPY:~$ nano helloscrit.sh
+suraj_ust@SURAJ-LAPPY:~$ ./helloscrit.sh jan feb march april may june july aug sep oct nov dec
+The first month is jan
+2nd month is feb
+3rd month is march
+4th is april
+5th is may
+6th is june
+7th is july
+8th is aug
+9th is sep
+10th is oct
+11th is nov
+12th is dec
+suraj_ust@SURAJ-LAPPY:~$
+suraj_ust@SURAJ-LAPPY:~$ #shell scripting if-elif-fi
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ chmod +x ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifelsefi.sh
+-bash: ./ifelsefi.sh: No such file or directory
+suraj_ust@SURAJ-LAPPY:~$ cat ifeliffi.sh
+#!/bin/bash
+echo  welcome to if-elif-fi condition
+echo  enter ur favourite color
+read color
+if[ $color = red ]
+        then echo red is his fav color
+elif[ $color = blue ]
+        then echo blue is his fav color
+elif[ $color = black ]
+        then echo black is his fav color
+        else echo His fav color is not in the list
+fi
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+welcome to if-elif-fi condition
+enter ur favourite color
+red
+./ifeliffi.sh: line 5: if[ red = red ]: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo red is his fav color'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+red
+./ifeliffi.sh: line 5: if[ red = red ]: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo " red is his fav color "'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+red
+./ifeliffi.sh: line 5: if[red = red]: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo " red is his fav color "'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+orange
+./ifeliffi.sh: line 5: if[orange = red]: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo " red is his fav color "'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+orange
+./ifeliffi.sh: line 5: if[orange == red]: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo " red is his fav color "'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+;dfaj
+./ifeliffi.sh: line 5: if[;dfaj == red]:: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo " red is his fav color "'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+red
+./ifeliffi.sh: line 5: if[red = red]:: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo " red is his fav color "'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+rd
+./ifeliffi.sh: line 5: if[rd = red]: command not found
+./ifeliffi.sh: line 6: syntax error near unexpected token `then'
+./ifeliffi.sh: line 6: `        then echo  "$color res is his fav color "'
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+red
+./ifeliffi.sh: line 5: [red: command not found
+./ifeliffi.sh: line 7: [red: command not found
+./ifeliffi.sh: line 9: [red: command not found
+ His fav color is red
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+red
+./ifeliffi.sh: line 5: [red: command not found
+./ifeliffi.sh: line 7: [red: command not found
+./ifeliffi.sh: line 9: [red: command not found
+ His fav color is red
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+orange
+./ifeliffi.sh: line 5: [orange: command not found
+./ifeliffi.sh: line 7: [orange: command not found
+./ifeliffi.sh: line 9: [orange: command not found
+ His fav color is orange
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+red
+red is his fav color
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+orange
+ His fav color is orange
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$ ./ifeliffi.sh
+ welcome to if-elif-fi condition
+ enter ur favourite color
+green
+ His fav color is not in the list
+suraj_ust@SURAJ-LAPPY:~$ nano ifeliffi.sh
+suraj_ust@SURAJ-LAPPY:~$
+
+
+suraj_ust@SURAJ-LAPPY:~$ ls
+Hashmum        Zing      assignment        helloscrit.sh  install-tomcat  mytext.txt   outputfile.txt  parentfolder  singh         suraj           var.sh
+InitialGalaxy  abcd.txt  backupmytext.txt  ifeliffi.sh    mytem           mytext2.txt  parent          shellfile.sh  start-tomcat  suraj_playbook
+suraj_ust@SURAJ-LAPPY:~$ #anisible version check
+suraj_ust@SURAJ-LAPPY:~$ ansible --version
+ansible [core 2.11.7]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/suraj_ust/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/suraj_ust/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+suraj_ust@SURAJ-LAPPY:~$ #parallelism and shell command
+suraj_ust@SURAJ-LAPPY:~$ ansible atlanta -a "/sbin/reboot" -f 10 -u surajust
+[WARNING]: Could not match supplied host pattern, ignoring: atlanta
+[WARNING]: No hosts matched, nothing to do
+suraj_ust@SURAJ-LAPPY:~$ #writing play using yaml format
+suraj_ust@SURAJ-LAPPY:~$ mkdir ansiblefolder
+suraj_ust@SURAJ-LAPPY:~$ cd ansiblefolder
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ nano playfile
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ cat playfile
+--- # optional yaml syntax format
+suraj:
+        name: suraj singh
+        id: 2062
+        location: Trivandrum
+        contact: 737
+... #option yaml end syntax
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ ./playfile
+-bash: ./playfile: Permission denied
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ chmod +x playfile
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ ./playfile
+./playfile: line 1: ---: command not found
+./playfile: line 2: suraj:: command not found
+./playfile: line 3: name:: command not found
+./playfile: line 4: id:: command not found
+./playfile: line 5: location:: command not found
+./playfile: line 6: contact:: command not found
+./playfile: line 7: ...: command not found
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ nano playfile
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ #representing List
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ nano list
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ cat list
+--- # syntax to represent a list
+Fruits:
+        - Mango
+        - Apple
+        - Banana
+        - Guava
+...
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ chmod +x list
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ ./list
+./list: line 1: ---: command not found
+./list: line 2: Fruits:: command not found
+./list: line 3: -: command not found
+./list: line 4: -: command not found
+./list: line 5: -: command not found
+./list: line 6: -: command not found
+./list: line 7: ...: command not found
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ nano list
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ ./list
+./list: line 1: ---: command not found
+./list: line 2: Fruits:: command not found
+./list: line 3: -: command not found
+./list: line 4: -: command not found
+./list: line 5: -: command not found
+./list: line 6: -: command not found
+./list: line 7: ...: command not found
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ nano list
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ nano list.yml
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ chmod +x list.yml
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ ./list.yml
+./list.yml: line 1: ---: command not found
+./list.yml: line 2: Fruits:: command not found
+./list.yml: line 3: -: command not found
+./list.yml: line 4: -: command not found
+./list.yml: line 5: -: command not found
+./list.yml: line 6: -: command not found
+./list.yml: line 7: ...: command not found
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ nano list.yml
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ #ad
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ #creating role directory
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ ansible-galaxy init --force --offline surajrole
+- Role surajrole was created successfully
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ tree surajrole/
+surajrole/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder$ cd \surajrole
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder/surajrole$ ls
+README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+suraj_ust@SURAJ-LAPPY:~/ansiblefolder/surajrole$
+
+
