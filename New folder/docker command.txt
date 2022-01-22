@@ -1,0 +1,381 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS D:\getting-started-master> docker built -t surajust/getting-started .
+unknown shorthand flag: 't' in -t
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default      
+                           "C:\\Users\\DELL\\.docker")
+  -c, --context string     Name of the context to use to connect to the  
+                           daemon (overrides DOCKER_HOST env var and     
+                           default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")       
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "C:\\Users\\DELL\\.docker\\ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "C:\\Users\\DELL\\.docker\\cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "C:\\Users\\DELL\\.docker\\key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.7.1)
+  compose*    Docker Compose (Docker Inc., v2.2.1)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.14.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+
+PS D:\getting-started-master> cd getting-started-master
+PS D:\getting-started-master\getting-started-master> cd app
+PS D:\getting-started-master\getting-started-master\app> docker build -t surajust/getting-started .
+[+] Building 580.2s (16/16) FINISHED
+ => [internal] load .dockerignore                                                                                                            3.3s 
+ => => transferring context: 2B                                                                                                              0.2s 
+ => [internal] load build definition from Dockerfile                                                                                         3.8s 
+ => => transferring dockerfile: 214B                                                                                                         0.6s 
+ => resolve image config for docker.io/docker/dockerfile:1                                                                                  14.7s 
+ => [auth] docker/dockerfile:pull token for registry-1.docker.io                                                                             0.0s 
+ => docker-image://docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                    32.6s 
+ => => resolve docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                         0.3s 
+ => => sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2 2.00kB / 2.00kB                                               0.0s 
+ => => sha256:93f32bd6dd9004897fed4703191f48924975081860667932a4df35ba567d7426 528B / 528B                                                   0.0s 
+ => => sha256:e532695ddd93ca7c85a816c67afdb352e91052fab7ac19a675088f80915779a7 1.21kB / 1.21kB                                               0.0s 
+ => => sha256:24a639a53085eb680e1d11618ac62f3977a3926fedf5b8471ace519b8c778030 9.67MB / 9.67MB                                               6.7s 
+ => => extracting sha256:24a639a53085eb680e1d11618ac62f3977a3926fedf5b8471ace519b8c778030                                                    6.0s 
+ => [internal] load .dockerignore                                                                                                            0.0s 
+ => [internal] load build definition from Dockerfile                                                                                         0.0s 
+ => [internal] load metadata for docker.io/library/node:12-alpine                                                                            9.9s 
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                  0.0s 
+ => [internal] load build context                                                                                                            6.2s 
+ => [1/5] FROM docker.io/library/node:12-alpine@sha256:c3e7817c8fd124f1597cd66124d247db8e138e8ef311ba085b7104d900129d0b                    127.5s 
+ => => resolve docker.io/library/node:12-alpine@sha256:c3e7817c8fd124f1597cd66124d247db8e138e8ef311ba085b7104d900129d0b                      0.7s 
+ => => sha256:5cbf7b125ab0155df10b7fc86252b000d8b01c508da39c069a0c3d07db03a673 1.16kB / 1.16kB                                               0.0s 
+ => => extracting sha256:59bf1c3509f33515622619af21ed55bbe26d24913cedbca106468a5fb37a50c3                                                   12.0s 
+ => => sha256:a9867c49b9ebe6a7af9f0066c7b4fbdd083d658335b83c57c57f368abb43de92 453B / 453B                                                   9.0s 
+ => => extracting sha256:56ea1bcfc51681a204ae05c69001c5b7d72bf091d2bfa06f18db72f380ab7494                                                   63.5s 
+ => => extracting sha256:55284a5c72ce1ed6a1c6a6601d67bdabdb0fa7d111921adca44238fdb08c71af                                                    1.4s 
+ => => extracting sha256:a9867c49b9ebe6a7af9f0066c7b4fbdd083d658335b83c57c57f368abb43de92                                                    0.0s 
+ => [2/5] RUN apk add --no-cache python2 g++ make                                                                                          119.2s 
+ => [3/5] WORKDIR /app                                                                                                                       3.0s 
+ => [4/5] COPY . .                                                                                                                           3.4s 
+ => [5/5] RUN yarn install --production                                                                                                    156.3s 
+ => exporting to image                                                                                                                      96.9s 
+ => => exporting layers                                                                                                                     95.8s 
+docker: invalid reference format.
+See 'docker run --help'.
+PS D:\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 surajust/getting-started 
+0aaca8a2d311387ecbddf88ef9d1e8be5d4f2ad285286298fe1db71cec4db44a
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app> docker push surajust/getting-started        
+Using default tag: latest
+The push refers to repository [docker.io/surajust/getting-started]
+905461e75de5: Pushed
+88acd1f679f9: Pushed
+4f6bc6d5107c: Pushed
+c08dbaa232c4: Pushed
+4eb06231aba4: Mounted from library/node
+62549ded9a31: Mounted from library/node
+8d3ac3489996: Mounted from library/node
+latest: digest: sha256:5a70584da0b70fb46a574b1ef8f4c5c621118006b3eb153f895d6106bb207c10 size: 2000
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app>
+ea362f368469: Pull complete
+Digest: sha256:b5a61709a9a44284d88fb12e5c48db0409cfad5b69d4ff8224077c57302df9cf
+bb55df1c0a6e8723fef8be82f180e4b604af438678fa8405bc6566321b340419
+PS D:\getting-started-master\getting-started-master\app> cat /data.txt
+cat : Cannot find path 'D:\data.txt' because it does not exist.
+At line:1 char:1
++ cat /data.txt
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\data.txt:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+PS D:\getting-started-master\getting-started-master\app> docker exec <container-id> cat /data.txt
+At line:1 char:13
++ docker exec <container-id> cat /data.txt
++             ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+ 
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app> #USING BIND MOUNT 
+PS D:\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 \
+See 'docker run --help'.
+PS D:\getting-started-master\getting-started-master\app>      -w /app -v "$(pwd):/app" \
+-w : The term '-w' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if   
+a path was included, verify that the path is correct and try again.
+At line:1 char:6
++      -w /app -v "$(pwd):/app" \
++      ~~
+    + CategoryInfo          : ObjectNotFound: (-w:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PS D:\getting-started-master\getting-started-master\app>      node:12-alpine \
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:6
++      node:12-alpine \
++      ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (node:12-alpine:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\getting-started-master\getting-started-master\app> #use ' in the bind mount 
+PS D:\getting-started-master\getting-started-master\app>  docker run -dp 3000:3000 `
+>>      -w /app -v "$(pwd):/app" `
+>>      node:12-alpine `
+>>      sh -c "yarn install && yarn run dev"
+Unable to find image 'node:12-alpine' locally
+12-alpine: Pulling from library/node
+59bf1c3509f3: Already exists
+56ea1bcfc516: Already exists
+55284a5c72ce: Already exists
+a9867c49b9eb: Already exists
+Digest: sha256:c3e7817c8fd124f1597cd66124d247db8e138e8ef311ba085b7104d900129d0b
+Status: Downloaded newer image for node:12-alpine
+31d81d33b75055cf7b4210f16cb5d17457da60905cb8a8b9d589f4d61c94e38a
+PS D:\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+PS D:\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS                    NAMES
+31d81d33b750   node:12-alpine   "docker-entrypoint.s…"   3 minutes ago   Up 9 seconds   0.0.0.0:3000->3000/tcp   nostalgic_lichterman
+PS D:\getting-started-master\getting-started-master\app> docker logs -f 31d81d33b750
+yarn install v1.22.17
+[1/4] Resolving packages...
+info If you think this is a bug, please open a bug report with the information provided in "/app/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+error An unexpected error occurred: "https://registry.yarnpkg.com/ansi-regex: getaddrinfo EAI_AGAIN registry.yarnpkg.com".
+yarn install v1.22.17
+[1/4] Resolving packages...
+warning Resolution field "ansi-regex@5.0.1" is incompatible with requested version "ansi-regex@^2.0.0"
+warning Resolution field "ansi-regex@5.0.1" is incompatible with requested version "ansi-regex@^3.0.0"
+warning sqlite3 > node-gyp > tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.   
+warning sqlite3 > node-gyp > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning sqlite3 > node-gyp > request > har-validator@5.1.5: this library is no longer supported
+warning sqlite3 > node-gyp > request > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Saved lockfile.
+Done in 734.91s.
+yarn run v1.22.17
+$ nodemon src/index.js
+[nodemon] 2.0.13
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node src/index.js`
+Using sqlite database at /etc/todos/todo.db
+Listening on port 3000
+PS D:\getting-started-master\getting-started-master\app> #MULTI CONTAINER APP
+PS D:\getting-started-master\getting-started-master\app>  docker network create todo-app
+b2ade105650f838980481fa102fb04247567cdbd487d748bb3c4feba4adbb1b9
+PS D:\getting-started-master\getting-started-master\app>  docker run -d `
+>>      --network todo-app --network-alias mysql `
+>>      -v todo-mysql-data:/var/lib/mysql `
+>>      -e MYSQL_ROOT_PASSWORD=secret `
+>>      -e MYSQL_DATABASE=todos `
+>>      mysql:5.7
+Unable to find image 'mysql:5.7' locally
+5.7: Pulling from library/mysql
+72a69066d2fe: Pull complete
+93619dbc5b36: Pull complete
+99da31dd6142: Pull complete
+e5c707858ec0: Pull complete
+fc41578cbf60: Pull complete
+4785d896ef10: Pull complete
+7d250cdc93be: Pull complete
+2efe6ef3579a: Pull complete
+40dc4a5ca43a: Pull complete
+cd6f90222f59: Pull complete
+031e631e9021: Pull complete
+Digest: sha256:66480693e01295d85954bb5dbe2f41f29ebceb57d3d8098ea0c9d201473f2d8b
+Status: Downloaded newer image for mysql:5.7
+PS D:\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                 NAMES
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p
+Error response from daemon: Container b72bce8f9b4dd677d1748c74af819e51c1b5684fa84eb153092b668fa89f76e3 is not running
+PS D:\getting-started-master\getting-started-master\app>  SHOW DATABASES;
+SHOW : The term 'SHOW' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or  
+At line:1 char:2
++  SHOW DATABASES;
+    + CategoryInfo          : ObjectNotFound: (SHOW:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+PS D:\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS         PORTS                    NAMES
+b72bce8f9b4d   mysql:5.7        "docker-entrypoint.s…"   53 minutes ago   Up 3 minutes   3306/tcp, 33060/tcp      clever_leakey
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p
+Enter password:
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p
+Enter password:
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p
+Enter password:
+PS D:\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED             STATUS          PORTS                 NAMES
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p
+Enter password:
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+CONTAINER ID   IMAGE       COMMAND                  CREATED             STATUS          PORTS                 NAMES
+b72bce8f9b4d   mysql:5.7   "docker-entrypoint.s…"   About an hour ago   Up 28 minutes   3306/tcp, 33060/tcp   clever_leakey
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d 
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+
+Run a command in a running container
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p  
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+PS D:\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED             STATUS          PORTS                 NAMES
+b72bce8f9b4d   mysql:5.7   "docker-entrypoint.s…"   About an hour ago   Up 28 seconds   3306/tcp, 33060/tcp   clever_leakey
+PS D:\getting-started-master\getting-started-master\app> docker exec -it b72bce8f9b4d mysql -u root -p 
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+PS D:\getting-started-master\getting-started-master\app> #RETRY THE MULTI APP CONTAINER 
+PS D:\getting-started-master\getting-started-master\app> docker network create todo-app
+Error response from daemon: network with name todo-app already exists
+PS D:\getting-started-master\getting-started-master\app> docker network create todo-app
+Error response from daemon: network with name todo-app already exists
+>>      --network todo-app --network-alias mysql `
+>>      -v todo-mysql-data:/var/lib/mysql `
+>>      -e MYSQL_ROOT_PASSWORD=secret `
+>>      -e MYSQL_DATABASE=todos `
+>>      mysql:5.7
+Unable to find image 'mysql:5.7' locally
+5.7: Pulling from library/mysql
+72a69066d2fe: Pull complete
+93619dbc5b36: Pull complete
+99da31dd6142: Pull complete
+cd6f90222f59: Pull complete
+031e631e9021: Pull complete
+Digest: sha256:66480693e01295d85954bb5dbe2f41f29ebceb57d3d8098ea0c9d201473f2d8b
+Status: Downloaded newer image for mysql:5.7
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS              PORTS                 NAMES
+94b844f57293   mysql:5.7   "docker-entrypoint.s…"   2 minutes ago   Up About a minute   3306/tcp, 33060/tcp   gracious_jones
+PS D:\getting-started-master\getting-started-master\app> docker exec -it 94b844f57293 mysql -u root -p
+Error response from daemon: Container 94b844f572935757dea4689a3df6c24666ff22ce50033e8317fb998e6172a895 is not running
+PS D:\getting-started-master\getting-started-master\app> docker exec -it 94b844f57293 mysql -u root -p
+Error response from daemon: Container 94b844f572935757dea4689a3df6c24666ff22ce50033e8317fb998e6172a895 is not running
+PS D:\getting-started-master\getting-started-master\app> docker exec -it 94b844f57293 mysql -u root -p
+Enter password: 
+
+
+
+
+
+
+PS D:\getting-started-master\getting-started-master\app> docker exec -it 94b844f57293 mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app>
+PS D:\getting-started-master\getting-started-master\app> #docker compose
+PS D:\getting-started-master\getting-started-master\app> docker-compose up -d
+Creating network "app_default" with the default driver
+Creating volume "app_todo-mysql-data" with default driver
+Creating app_app_1   ... done
+Creating app_app_1   ... done
+Creating app_mysql_1 ... done
+PS D:\getting-started-master\getting-started-master\app> docker-compose logs -f app
+Attaching to app_app_1
+app_1    | yarn install v1.22.17
+app_1    | [1/4] Resolving packages...
+app_1    | warning Resolution field "ansi-regex@5.0.1" is incompatible with requested version "ansi-regex@^2.0.0"
+app_1    | warning Resolution field "ansi-regex@5.0.1" is incompatible with requested version "ansi-regex@^3.0.0"
+app_1    | success Already up-to-date.
+app_1    | Done in 51.07s.
+app_1    | yarn run v1.22.17
+app_1    | $ nodemon src/index.js
+app_1    | [nodemon] 2.0.13
+app_1    | [nodemon] to restart at any time, enter `rs`
+app_1    | [nodemon] watching path(s): *.*
+app_1    | [nodemon] watching extensions: js,mjs,json
+app_1    | [nodemon] starting `node src/index.js`
+ERROR: Aborting.
+PS D:\getting-started-master\getting-started-master\app> 
