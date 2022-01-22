@@ -1,0 +1,350 @@
+Copyright (C) Microsoft Corporation. All rights reserved.
+PS D:\Kubernetes> kubectl apply -f pod.yaml
+pod/demo unchanged
+PS D:\Kubernetes> kubectl get pods
+NAME   READY   STATUS    RESTARTS   AGE 
+demo   1/1     Running   0          7m7s
+PS D:\Kubernetes> kubectl logs demo
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: seq=0 ttl=37 time=390.684 ms
+64 bytes from 8.8.8.8: seq=1 ttl=37 time=74.826 ms 
+64 bytes from 8.8.8.8: seq=2 ttl=37 time=43.877 ms 
+64 bytes from 8.8.8.8: seq=3 ttl=37 time=37.363 ms 
+64 bytes from 8.8.8.8: seq=4 ttl=37 time=16.438 ms 
+64 bytes from 8.8.8.8: seq=5 ttl=37 time=25.663 ms 
+64 bytes from 8.8.8.8: seq=6 ttl=37 time=25.278 ms 
+64 bytes from 8.8.8.8: seq=7 ttl=37 time=41.363 ms 
+64 bytes from 8.8.8.8: seq=8 ttl=37 time=137.912 ms
+64 bytes from 8.8.8.8: seq=9 ttl=37 time=165.076 ms
+64 bytes from 8.8.8.8: seq=10 ttl=37 time=20.609 ms
+64 bytes from 8.8.8.8: seq=11 ttl=37 time=72.159 ms
+64 bytes from 8.8.8.8: seq=12 ttl=37 time=13.672 ms
+64 bytes from 8.8.8.8: seq=13 ttl=37 time=17.694 ms
+64 bytes from 8.8.8.8: seq=14 ttl=37 time=19.876 ms
+64 bytes from 8.8.8.8: seq=15 ttl=37 time=19.092 ms
+64 bytes from 8.8.8.8: seq=16 ttl=37 time=25.764 ms
+64 bytes from 8.8.8.8: seq=17 ttl=37 time=16.523 ms
+64 bytes from 8.8.8.8: seq=18 ttl=37 time=18.571 ms
+64 bytes from 8.8.8.8: seq=19 ttl=37 time=23.268 ms
+64 bytes from 8.8.8.8: seq=20 ttl=37 time=17.322 ms
+64 bytes from 8.8.8.8: seq=21 ttl=37 time=24.028 ms
+64 bytes from 8.8.8.8: seq=22 ttl=37 time=38.965 ms
+64 bytes from 8.8.8.8: seq=23 ttl=37 time=112.060 ms
+64 bytes from 8.8.8.8: seq=24 ttl=37 time=16.998 ms
+64 bytes from 8.8.8.8: seq=25 ttl=37 time=14.663 ms
+64 bytes from 8.8.8.8: seq=26 ttl=37 time=17.741 ms
+64 bytes from 8.8.8.8: seq=27 ttl=37 time=12.802 ms
+64 bytes from 8.8.8.8: seq=28 ttl=37 time=14.844 ms
+64 bytes from 8.8.8.8: seq=29 ttl=37 time=26.712 ms
+64 bytes from 8.8.8.8: seq=30 ttl=37 time=32.721 ms
+64 bytes from 8.8.8.8: seq=31 ttl=37 time=51.627 ms
+64 bytes from 8.8.8.8: seq=32 ttl=37 time=21.863 ms
+64 bytes from 8.8.8.8: seq=33 ttl=37 time=51.930 ms
+64 bytes from 8.8.8.8: seq=34 ttl=37 time=14.730 ms
+64 bytes from 8.8.8.8: seq=35 ttl=37 time=21.292 ms
+64 bytes from 8.8.8.8: seq=36 ttl=37 time=16.269 ms
+64 bytes from 8.8.8.8: seq=37 ttl=37 time=13.452 ms
+64 bytes from 8.8.8.8: seq=38 ttl=37 time=16.579 ms
+64 bytes from 8.8.8.8: seq=39 ttl=37 time=102.645 ms
+64 bytes from 8.8.8.8: seq=40 ttl=37 time=17.417 ms
+64 bytes from 8.8.8.8: seq=41 ttl=37 time=21.568 ms
+64 bytes from 8.8.8.8: seq=42 ttl=37 time=24.538 ms
+64 bytes from 8.8.8.8: seq=43 ttl=37 time=23.676 ms
+64 bytes from 8.8.8.8: seq=44 ttl=37 time=15.056 ms
+64 bytes from 8.8.8.8: seq=45 ttl=37 time=23.194 ms
+64 bytes from 8.8.8.8: seq=46 ttl=37 time=15.923 ms
+64 bytes from 8.8.8.8: seq=47 ttl=37 time=17.050 ms
+64 bytes from 8.8.8.8: seq=48 ttl=37 time=14.209 ms
+64 bytes from 8.8.8.8: seq=49 ttl=37 time=37.735 ms
+64 bytes from 8.8.8.8: seq=50 ttl=37 time=22.429 ms
+64 bytes from 8.8.8.8: seq=51 ttl=37 time=21.002 ms
+64 bytes from 8.8.8.8: seq=52 ttl=37 time=13.148 ms
+64 bytes from 8.8.8.8: seq=53 ttl=37 time=16.984 ms
+64 bytes from 8.8.8.8: seq=54 ttl=37 time=40.471 ms
+64 bytes from 8.8.8.8: seq=55 ttl=37 time=16.239 ms
+64 bytes from 8.8.8.8: seq=56 ttl=37 time=16.426 ms
+64 bytes from 8.8.8.8: seq=57 ttl=37 time=14.169 ms
+64 bytes from 8.8.8.8: seq=58 ttl=37 time=28.713 ms
+64 bytes from 8.8.8.8: seq=59 ttl=37 time=18.893 ms
+64 bytes from 8.8.8.8: seq=60 ttl=37 time=14.078 ms
+64 bytes from 8.8.8.8: seq=61 ttl=37 time=21.289 ms
+64 bytes from 8.8.8.8: seq=62 ttl=37 time=19.232 ms
+64 bytes from 8.8.8.8: seq=63 ttl=37 time=15.171 ms
+64 bytes from 8.8.8.8: seq=64 ttl=37 time=13.312 ms
+64 bytes from 8.8.8.8: seq=65 ttl=37 time=12.724 ms
+64 bytes from 8.8.8.8: seq=66 ttl=37 time=19.055 ms
+64 bytes from 8.8.8.8: seq=67 ttl=37 time=20.614 ms
+64 bytes from 8.8.8.8: seq=68 ttl=37 time=12.860 ms
+64 bytes from 8.8.8.8: seq=69 ttl=37 time=21.297 ms
+64 bytes from 8.8.8.8: seq=70 ttl=37 time=34.942 ms
+64 bytes from 8.8.8.8: seq=71 ttl=37 time=20.022 ms
+64 bytes from 8.8.8.8: seq=72 ttl=37 time=151.125 ms
+64 bytes from 8.8.8.8: seq=73 ttl=37 time=17.087 ms
+64 bytes from 8.8.8.8: seq=74 ttl=37 time=13.430 ms
+64 bytes from 8.8.8.8: seq=75 ttl=37 time=16.236 ms
+64 bytes from 8.8.8.8: seq=76 ttl=37 time=14.185 ms
+64 bytes from 8.8.8.8: seq=77 ttl=37 time=32.657 ms
+64 bytes from 8.8.8.8: seq=79 ttl=37 time=45.132 ms
+64 bytes from 8.8.8.8: seq=83 ttl=37 time=17.356 ms
+64 bytes from 8.8.8.8: seq=84 ttl=37 time=22.501 ms
+64 bytes from 8.8.8.8: seq=85 ttl=37 time=16.478 ms
+64 bytes from 8.8.8.8: seq=86 ttl=37 time=97.456 ms
+64 bytes from 8.8.8.8: seq=87 ttl=37 time=17.519 ms
+64 bytes from 8.8.8.8: seq=88 ttl=37 time=20.717 ms
+64 bytes from 8.8.8.8: seq=89 ttl=37 time=26.060 ms
+64 bytes from 8.8.8.8: seq=90 ttl=37 time=16.579 ms
+64 bytes from 8.8.8.8: seq=92 ttl=37 time=20.062 ms
+64 bytes from 8.8.8.8: seq=93 ttl=37 time=34.194 ms
+64 bytes from 8.8.8.8: seq=94 ttl=37 time=18.165 ms
+64 bytes from 8.8.8.8: seq=95 ttl=37 time=15.267 ms
+64 bytes from 8.8.8.8: seq=96 ttl=37 time=15.885 ms
+64 bytes from 8.8.8.8: seq=97 ttl=37 time=13.738 ms
+64 bytes from 8.8.8.8: seq=98 ttl=37 time=13.585 ms
+64 bytes from 8.8.8.8: seq=99 ttl=37 time=199.367 ms
+64 bytes from 8.8.8.8: seq=100 ttl=37 time=18.335 ms
+64 bytes from 8.8.8.8: seq=101 ttl=37 time=83.638 ms
+PS D:\Kubernetes> kubectl delete -f pod.yaml
+pod "demo" deleted
+PS D:\Kubernetes>
+PS D:\Kubernetes> #enable docker swarm
+PS D:\Kubernetes> docker swarm init
+Swarm initialized: current node (uq3sn7t4sviyh56erd4ianzw3) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token SWMTKN-1-1d7a3n1ac97v7jjtu1v7qlz34flzkv2rcu729pe9pz82evcxuu-eigjf8l0ebc028i8z0ljw9u3f 192.168.65.3:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+
+PS D:\Kubernetes> docker service create --name demo alpine:3.5 ping 8.8.8.8
+66638xsd1ske8aoehmddyok22
+overall progress: 1 out of 1 tasks
+1/1: running   [==================================================>]
+verify: Service converged
+PS D:\Kubernetes>  docker service ps demo
+ID             NAME      IMAGE        NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+5m1glwrszumz   demo.1    alpine:3.5   docker-desktop   Running         Running about a minute ago
+PS D:\Kubernetes> docker service logs demo
+demo.1.5m1glwrszumz@docker-desktop    | PING 8.8.8.8 (8.8.8.8): 56 data bytes
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=0 ttl=37 time=17.364 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=1 ttl=37 time=14.523 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=2 ttl=37 time=15.747 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=3 ttl=37 time=17.506 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=4 ttl=37 time=22.515 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=5 ttl=37 time=15.299 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=6 ttl=37 time=13.752 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=7 ttl=37 time=22.100 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=8 ttl=37 time=63.444 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=9 ttl=37 time=17.117 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=10 ttl=37 time=13.905 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=11 ttl=37 time=15.072 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=12 ttl=37 time=18.602 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=13 ttl=37 time=12.960 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=14 ttl=37 time=18.438 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=15 ttl=37 time=24.695 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=16 ttl=37 time=14.271 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=17 ttl=37 time=20.765 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=18 ttl=37 time=23.457 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=19 ttl=37 time=48.441 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=20 ttl=37 time=17.292 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=21 ttl=37 time=14.085 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=22 ttl=37 time=37.223 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=23 ttl=37 time=27.154 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=24 ttl=37 time=40.475 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=25 ttl=37 time=18.915 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=26 ttl=37 time=18.261 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=27 ttl=37 time=13.072 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=28 ttl=37 time=259.376 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=29 ttl=37 time=14.344 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=30 ttl=37 time=17.064 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=31 ttl=37 time=15.736 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=32 ttl=37 time=14.742 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=33 ttl=37 time=13.187 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=34 ttl=37 time=20.457 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=35 ttl=37 time=18.389 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=36 ttl=37 time=14.019 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=37 ttl=37 time=21.001 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=38 ttl=37 time=61.615 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=39 ttl=37 time=163.651 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=41 ttl=37 time=313.791 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=42 ttl=37 time=30.569 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=43 ttl=37 time=16.071 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=44 ttl=37 time=39.083 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=45 ttl=37 time=105.674 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=46 ttl=37 time=236.071 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=47 ttl=37 time=58.848 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=48 ttl=37 time=181.338 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=49 ttl=37 time=56.346 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=50 ttl=37 time=20.255 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=51 ttl=37 time=40.164 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=52 ttl=37 time=21.593 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=53 ttl=37 time=177.955 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=54 ttl=37 time=19.196 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=55 ttl=37 time=27.274 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=56 ttl=37 time=19.384 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=57 ttl=37 time=239.034 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=58 ttl=37 time=24.396 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=59 ttl=37 time=14.003 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=60 ttl=37 time=27.411 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=61 ttl=37 time=869.891 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=62 ttl=37 time=113.123 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=63 ttl=37 time=38.206 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=64 ttl=37 time=36.518 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=65 ttl=37 time=27.576 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=66 ttl=37 time=76.849 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=67 ttl=37 time=16.207 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=68 ttl=37 time=21.036 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=70 ttl=37 time=33.911 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=71 ttl=37 time=16.609 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=72 ttl=37 time=13.732 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=73 ttl=37 time=46.530 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=74 ttl=37 time=15.160 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=75 ttl=37 time=22.684 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=76 ttl=37 time=20.973 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=77 ttl=37 time=44.150 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=78 ttl=37 time=14.126 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=79 ttl=37 time=33.936 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=80 ttl=37 time=17.662 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=81 ttl=37 time=15.897 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=82 ttl=37 time=27.108 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=83 ttl=37 time=22.193 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=84 ttl=37 time=26.114 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=85 ttl=37 time=24.188 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=86 ttl=37 time=24.227 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=87 ttl=37 time=12.887 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=88 ttl=37 time=49.363 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=89 ttl=37 time=119.123 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=90 ttl=37 time=22.408 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=91 ttl=37 time=87.419 ms
+demo.1.5m1glwrszumz@docker-desktop    | 64 bytes from 8.8.8.8: seq=92 ttl=37 time=21.225 ms
+PS D:\Kubernetes>  docker service rm demo
+demo
+PS D:\Kubernetes> 
+
+PS D:\Kubernetes> #bb.yaml file
+PS D:\Kubernetes> kubectl apply -f bb.yaml
+deployment.apps/bb-demo created
+service/bb-entrypoint created
+PS D:\Kubernetes>  kubectl get deployments
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+bb-demo   0/1     1            0           40s
+PS D:\Kubernetes> kubectl apply -f bb.yaml
+deployment.apps/bb-demo unchanged
+service/bb-entrypoint unchanged
+PS D:\Kubernetes>  kubectl get deployments
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/bb-demo configured
+service/bb-entrypoint unchanged
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+bb-demo   0/1     1            0           4m23s
+PS D:\Kubernetes> kubectl get deployments
+bb-demo   0/1     1            0           4m30s
+PS D:\Kubernetes> kubectl get deployments
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+bb-demo   0/1     1            0           4m38s
+PS D:\Kubernetes> kubectl get deployments
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+bb-demo   1/1     1            1           4m43s
+PS D:\Kubernetes> kubectl get services
+NAME            TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+bb-entrypoint   NodePort    10.108.253.223   <none>        3000:30001/TCP   5m9s
+kubernetes      ClusterIP   10.96.0.1        <none>        443/TCP          15h
+PS D:\Kubernetes> kubectl delete -f bb.yaml
+deployment.apps "bb-demo" deleted
+service "bb-entrypoint" deleted
+PS D:\Kubernetes> 
+
+PS D:\Kubernetes> #bb-stack.yaml file                      
+Creating network demo_default
+Creating service demo_bb-app
+PS D:\Kubernetes> docker service ls
+ID             NAME          MODE         REPLICAS   IMAGE                             PORTS
+0cruvkjhysoh   demo_bb-app   replicated   0/1        surajust/getting-started:latest   *:8000->8080/tcp
+PS D:\Kubernetes> docker service ls
+ID             NAME          MODE         REPLICAS   IMAGE                             PORTS
+0cruvkjhysoh   demo_bb-app   replicated   1/1        surajust/getting-started:latest   *:8000->8080/tcp
+PS D:\Kubernetes> docker service ls
+ID             NAME          MODE         REPLICAS   IMAGE                             PORTS
+0cruvkjhysoh   demo_bb-app   replicated   1/1        surajust/getting-started:latest   *:8000->8080/tcp
+PS D:\Kubernetes> docker stack rm demo
+Removing service demo_bb-app
+Removing network demo_default
+PS D:\Kubernetes> 
+
+PS C:\> #Collect Docker metrics with Prometheus
+PS C:\> docker service create --replicas 1 --name my-prometheus
+"docker service create" requires at least 1 argument.
+See 'docker service create --help'.
+
+Usage:  docker service create [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Create a new service
+At line:1 char:7
++     --mount type=bind,source=C:/tmp/prometheus.yml,destination=/etc/p ...
++       ~
+Missing expression after unary operator '--'.
+At line:1 char:7
++     --mount type=bind,source=C:/tmp/prometheus.yml,destination=/etc/p ...
++       ~~~~~
+Unexpected token 'mount' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
++     --publish published=9090,target=9090,protocol=tcp
++       ~
+Missing expression after unary operator '--'.
+At line:1 char:7
++     --publish published=9090,target=9090,protocol=tcp
++       ~~~~~~~
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+
+PS C:\> docker service create --replicas 1 --name my-prometheus  --mount type=bind,source=C:/tmp/prometheus.yml,destination=/etc/prometheus/prometheus.yml   --publish published=9090,target=9090,protocol=tcp prom/prometheus
+87ibldpr8atpd5f75fcyunqe0
+overall progress: 1 out of 1 tasks
+1/1: running   [==================================================>]
+verify: Service converged
+PS C:\>  docker service create \
+Error response from daemon: rpc error: code = InvalidArgument desc = ContainerSpec: "\\" is not a valid repository/tag
+PS C:\>   --replicas 10 \
+At line:1 char:5
++   --replicas 10 \
+Missing expression after unary operator '--'.
+At line:1 char:5
++   --replicas 10 \
++     ~~~~~~~~
+Unexpected token 'replicas' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\>   --name ping_service \
+At line:1 char:5
++   --name ping_service \
++     ~
+Missing expression after unary operator '--'.
++   --name ping_service \
++     ~~~~
+Unexpected token 'name' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingExpressionAfterOperator
+ 
+PS C:\> docker service create `
+>> --replicas 10 `
+>>  --name ping_service `
+>> alpine ping docker.com
+o8ff483hsmisvvdmem0bm2l43
+overall progress: 0 out of 10 tasks
+1/10: assigned  [======================>                            ]
+2/10: assigned  [======================>                            ]
+3/10: accepted  [===========================>                       ]
+4/10: assigned  [======================>                            ]
+5/10: assigned  [======================>                            ]
+6/10: assigned  [======================>                            ]
+7/10: assigned  [======================>                            ]
+8/10: assigned  [======================>                            ]
+9/10: assigned  [======================>                            ]
+10/10: accepted  [===========================>                       ]
+Error response from daemon: rpc error: code = DeadlineExceeded desc = context deadline exceeded
+PS C:\>  docker service remove ping_service
+Error response from daemon: rpc error: code = DeadlineExceeded desc = context deadline exceeded
+PS C:\> 
